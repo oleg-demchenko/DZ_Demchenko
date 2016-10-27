@@ -22,5 +22,4 @@ public class task6_1 {
             }
         }
     }
-
 }

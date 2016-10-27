@@ -7,18 +7,27 @@ import java.util.Scanner;
  */
 public class task6_3 {
     public static void main(String[] args) {
-        Scanner in= new Scanner(System.in);
-        System.out.println("Введите целые числа: ");
-        String s;
-        s=in.nextLine();
-        for ( int i=0;i<s.length();i++){
-            Integer current = new Integer(s.charAt(i));
-            if (current%3==0 | current%9==0){
-                System.out.println("Число делится на rere: " + s.charAt(i));
-            }
-            if (current%9==0){
-                System.out.println("Число делится на 9: " + s.charAt(i));
-            }
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите размер массива");
+        int l = in.nextInt();
+        int[] arr = new int[l];
+        System.out.println("Введите масив");
+        for (int i = 0; i < arr.length; i++)
+            arr[i] = in.nextInt();
+        for (int i = 0; i < arr.length; i++) {
+            double a = arr[i] % 3;
+            if (a == 0)
+                System.out.println("Делится на 3: " + arr[i]);
+        }
+        System.out.println();
+        for (int i = 0; i < arr.length; i++) {
+            double a = arr[i] % 9;
+            if (a == 0)
+                System.out.print("Делится на 9: " + arr[i]);
         }
     }
 }
+
+
+
+

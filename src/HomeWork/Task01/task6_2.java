@@ -11,15 +11,7 @@ public class task6_2 {
         System.out.println("Введите целые числа: ");
         String s;
         s = in.nextLine();
-        for (int i = 0; i < s.length(); i++) {
-            Integer current = new Integer(s.charAt(i));
-            if (current % 2 == 0) {
-                System.out.println("Четные числа: " + s.charAt(i));
-            }
-            if (current % 2 != 0) {
-                System.out.println("Нечетные числа: " + s.charAt(i));
-            }
-        }
+
     }
 }
 
